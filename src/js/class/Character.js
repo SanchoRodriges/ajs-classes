@@ -4,16 +4,13 @@ export default class Character {
       throw new Error('Имя должно содержать от 2 до 10 символов');
     }
     this.name = name;
+    // if (!['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'].includes(type)) {
+    //   throw new Error('Неизвестное существо');
+    // }
     this.type = type;
     this.health = 100;
     this.level = 1;
     this.attack = attack;
     this.defence = defence;
-  }
-
-  checkType() {
-    if (!['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'].includes(this.type)) {
-      throw new Error('Неизвестное существо');
-    }
   }
 }

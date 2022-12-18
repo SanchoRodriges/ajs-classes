@@ -6,6 +6,5 @@ export default class Zombie extends Character {
     this.type = 'Zombie';
     this.attack = 40;
     this.defence = 10;
-    this.checkType();
   }
 }

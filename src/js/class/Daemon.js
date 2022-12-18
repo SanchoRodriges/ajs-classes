@@ -6,6 +6,5 @@ export default class Daemon extends Character {
     this.type = 'Daemon';
     this.attack = 10;
     this.defence = 40;
-    this.checkType();
   }
 }
